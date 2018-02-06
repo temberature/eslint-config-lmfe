@@ -1,0 +1,37 @@
+{
+  "name": "eslint-config-lmfe",
+  "version": "1.0.0",
+  "description": "lmfe's ESLint config, following our styleguide",
+  "main": "index.js",
+  "scripts": {
+    "prelint": "editorconfig-tools check * rules/* test/*",
+    "lint": "eslint --report-unused-disable-directives .",
+    "tests-only": "babel-tape-runner ./test/test-*.js",
+    "prepublish":
+      "(in-install || eslint-find-rules --unused) && (not-in-publish || npm test) && safe-publish-latest",
+    "pretest": "npm run --silent lint",
+    "test": "npm run --silent tests-only",
+    "pretravis": ":",
+    "travis": "npm run --silent test",
+    "posttravis": ":"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://git.easecreate.com/lmfe/eslint-config-lmfe"
+  },
+  "keywords": [
+    "eslint",
+    "eslintconfig",
+    "config",
+    "airbnb",
+    "javascript",
+    "styleguide"
+  ],
+  "license": "MIT",
+  "peerDependencies": {
+    "eslint": "^4.16.0"
+  },
+  "engines": {
+    "node": ">= 4"
+  }
+}
