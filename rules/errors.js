@@ -6,7 +6,7 @@ module.exports = {
     "getter-return": ["error", { allowImplicit: true }], // 强制get返回
     "no-await-in-loop": "error", // 循环中禁用await
     "no-compare-neg-zero": "error", // 禁用-0 ==> if(-0)
-    "no-cond-assign": ["error", "always"], // 条件判断中赋值 ==> if(a=1)
+    "no-cond-assign": ["warn", "always"], // 条件判断中赋值 ==> if(a=1)
     "no-console": "warn", // 调用console输出信息() 发布中需要设置为'warn'
     "no-constant-condition": "warn", // 条件判断中的常量 ==> if(true)
     "no-control-regex": "warn", // 控制正则表达式字符
