@@ -1,4 +1,4 @@
-#配置说明
+# 配置说明
 
 * best-practices.js [Best Practices](https://eslint.org/docs/rules/#best-practices) 这些规则涉及更好的做事方式，以帮助您避免问题
 * error.js [Possible Errors](https://eslint.org/docs/rules/#possible-errors) 这些规则涉及JavaScript代码中可能的语法或逻辑错误
