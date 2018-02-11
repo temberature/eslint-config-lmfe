@@ -9,15 +9,30 @@
     "url": "https://git.easecreate.com/lmfe/eslint-config-lmfe.git"
   },
   "keywords": [
+    "code",
+    "quality",
+    "style",
     "eslint",
-    "eslintconfig",
-    "config",
-    "airbnb",
-    "javascript",
-    "styleguide"
+    "lint",
+    "linter",
+    "jshint",
+    "jslint",
+    "eslint",
+    "validate",
+    "code style",
+    "strict",
+    "check",
+    "checker",
+    "verify"
   ],
-  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^4.16.0"
+  },
   "peerDependencies": {
     "eslint": "^4.16.0"
-  }
+  },
+  "engines": {
+    "node": ">= 4"
+  },
+  "license": "MIT"
 }
