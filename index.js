@@ -2,6 +2,7 @@ module.exports = {
   extends: [
     "./rules/best-practices",
     "./rules/errors",
+    "./rules/es6",
     "./rules/node",
     "./rules/strict",
     "./rules/style",
@@ -13,6 +14,7 @@ module.exports = {
   },
   env: {
     browser: true,
+    commonjs: true,
     amd: true,
     jquery: true
   }
