@@ -71,7 +71,7 @@ module.exports = {
     "no-shadow-restricted-names": "warn", // 不允许覆盖关键字
     "no-undef": "warn", // 禁止未声明的变量
     "no-undef-init": "warn", // 不允许初始化为undefined
-    "no-undefined": "warn", // 禁止使用undefined
+    "no-undefined": "off", // 禁止使用undefined
     "no-unused-vars": [
       "warn",
       {

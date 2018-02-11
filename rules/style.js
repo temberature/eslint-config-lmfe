@@ -55,7 +55,7 @@ module.exports = {
     "id-blacklist": ["off", "err", "e", "cb", "callback"], // 变量定义黑名单
     "id-length": ["off", { min: 2 }], // 变量命名的字数限制
     "id-match": ["off", "^[a-z]+([A-Z][a-z]+)*$"], // 变量命名的规则
-    "implicit-arrow-linebreak": ["warn", "below"], // 定义箭头函数体的返回位置
+    "implicit-arrow-linebreak": ["warn", "beside"], // 定义箭头函数体的返回位置
     indent: [
       "error",
       2,
@@ -162,7 +162,7 @@ module.exports = {
     "no-lonely-if": "warn", // if单独出现
     "no-mixed-operators": "warn", // 禁止混用不同的运算符 可用括号隔开
     "no-mixed-spaces-and-tabs": ["warn", "smart-tabs"], // 禁止混用缩进方式
-    "no-multi-assign": "warn", // 禁止链式赋值
+    "no-multi-assign": "off", // 禁止链式赋值
     "no-multiple-empty-lines": [
       "warn",
       {

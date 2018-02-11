@@ -11,7 +11,7 @@ module.exports = {
       }
     ],
     complexity: "off", // 限制逻辑负责性
-    "consistent-return": "warn", // 限制return必须有确定返回值
+    "consistent-return": "off", // 限制return必须有确定返回值
     curly: ["warn", "multi-line"], // 限制语句必须有花括号 ==> if (foo) foo++;
     "default-case": [
       "warn",
@@ -65,22 +65,7 @@ module.exports = {
     "no-new-wrappers": "warn",
     "no-octal": "warn", // 禁用八进制
     "no-octal-escape": "warn", // 禁止字符串文字中的八进制转义序列
-    "no-param-reassign": [
-      "warn",
-      {
-        props: true,
-        ignorePropertyModificationsFor: [
-          "acc", // for reduce accumulators
-          "e", // for e.returnvalue
-          "ctx", // for Koa routing
-          "req", // for Express requests
-          "request", // for Express requests
-          "res", // for Express responses
-          "response", // for Express responses
-          "$scope" // for Angular 1 scopes
-        ]
-      }
-    ], // 不允许重新分配函数参数
+    "no-param-reassign": "off", // 不允许重新分配函数参数
     "no-proto": "warn", // 禁止使用__proto__
     "no-redeclare": "warn", // 禁止重复定义
     "no-restricted-properties": "off", // 禁止某些对象属性
@@ -92,16 +77,8 @@ module.exports = {
     "no-sequences": "warn", // 禁止使用逗号运算符
     "no-throw-literal": "warn", // 限制可以抛出的异常
     "no-unmodified-loop-condition": "off", // 禁止未经修改的循环条件
-    "no-unused-expressions": [
-      // 禁止未被使用的表达式
-      "warn",
-      {
-        allowShortCircuit: true,
-        allowTernary: true,
-        allowTaggedTemplates: true
-      }
-    ],
-    "no-unused-labels": "warn", // 禁止未使用的label语句
+    "no-unused-expressions": "off", // 禁止未被使用的表达式
+    "no-unused-labels": "error", // 禁止未使用的label语句
     "no-useless-call": "warn", // 禁止无效的call apply
     "no-useless-concat": "warn", // 禁止不必要的字符串连接
     "no-useless-escape": "warn", // 禁止不必要的字符串转义

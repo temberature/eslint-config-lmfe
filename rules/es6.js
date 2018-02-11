@@ -56,9 +56,7 @@ module.exports = {
         allowParens: true
       }
     ],
-
-    // disallow modifying variables that are declared using const
-    "no-const-assign": "error",
+    "no-const-assign": "error", // 禁止给const声明的变量重新赋值
 
     // disallow duplicate class members
     // https://eslint.org/docs/rules/no-dupe-class-members
