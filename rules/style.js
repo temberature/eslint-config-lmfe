@@ -13,7 +13,7 @@ module.exports = {
       }
     ], // camelcase命名
     "capitalized-comments": "off", // 强制注释首字母大写
-    "comma-dangle": ["error", "always-multiline"], // []/{}结尾逗号
+    "comma-dangle": ["error", "never"], // []/{}结尾逗号
     "comma-spacing": [
       "error",
       {
@@ -181,7 +181,7 @@ module.exports = {
         let: "never",
         const: "never"
       }
-    ], // 变量在function中声明方式 分开/一起
+    ], // 变量在声明方式 分开/一起
     "one-var-declaration-per-line": ["error", "always"], // 变量声明独立一行
     "operator-assignment": "off", // 是否强制或允许简写运算赋 ==> x += y
     "operator-linebreak": "off", // 强制运算符换行
