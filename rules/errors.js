@@ -4,36 +4,21 @@ module.exports = {
     // https://eslint.org/docs/rules/#possible-errors
     "for-direction": "error", // 强制for循环方向正确
     "getter-return": ["error", { allowImplicit: true }], // 强制get返回
-    "no-await-in-loop": "error", // 循环中禁用await
+    "no-await-in-loop": "off", // 循环中禁用await
     "no-compare-neg-zero": "error", // 禁用-0 ==> if(-0)
-    "no-cond-assign": ["warn", "always"], // 条件判断中赋值 ==> if(a=1)
+    "no-cond-assign": "off", // 条件判断中赋值 ==> if(a=1)
     "no-console": "warn", // 调用console输出信息() 发布中需要设置为'warn'
-    "no-constant-condition": "warn", // 条件判断中的常量 ==> if(true)
+    "no-constant-condition": "error", // 条件判断中的常量 ==> if(true)
     "no-control-regex": "warn", // 控制正则表达式字符
-    "no-debugger": "warn", // debugger断点 发布中需要设置为'warn'
+    "no-debugger": "error", // debugger断点 发布中需要设置为'warn'
     "no-dupe-args": "error", // 函数参数重复 function foo(a, b, a)
     "no-dupe-keys": "error", // 对象属性重复 { bar: 'baz', bar: 'qux' }
     "no-duplicate-case": "error", // switch语句出现重复case判断
-    "no-empty": [
-      "error",
-      {
-        allowEmptyCatch: true
-      }
-    ], // 空块 ==> if(a){}
+    "no-empty": "error", // 空块 ==> if(a){}
     "no-empty-character-class": "error", // 正则表达式中的空 ==> /^abc[]/
     "no-ex-assign": "error", // catch中的空e被重新赋值 ==> try {} catch (e) {e = 10;}
     "no-extra-boolean-cast": "error", // 不必要的布尔转化 if(!!foo)
-    "no-extra-parens": [
-      "off",
-      "all",
-      {
-        conditionalAssign: true,
-        nestedBinaryExpressions: false,
-        returnAssign: false,
-        ignoreJSX: "all", // delegate to eslint-plugin-react
-        enforceForArrowConditionals: false
-      }
-    ], // 这个规则限制只在必要的地方使用括号
+    "no-extra-parens": "off", // 这个规则限制只在必要的地方使用括号
     "no-extra-semi": "error", // 多余的分号 ==> ;;
     "no-func-assign": "error", // 给函数赋值
     "no-inner-declarations": "error", // 在块里定义函数
