@@ -197,7 +197,7 @@ module.exports = {
       }
     ], // 引号一致性
     "require-jsdoc": [
-      "warn",
+      "off",
       {
         require: {
           FunctionDeclaration: true,
@@ -217,7 +217,7 @@ module.exports = {
     "semi-style": ["error", "last"], // 分号风格
     "sort-keys": "off", // 对象属性声明属性排序
     "sort-vars": "off", // 变量声明属性排序
-    "space-before-blocks": ["error", "never"], // 块之前的空格
+    "space-before-blocks": ["error", "always"], // 块之前的空格
     "space-before-function-paren": [
       "error",
       {
