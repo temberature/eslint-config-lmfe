@@ -3,30 +3,16 @@ module.exports = {
     node: true
   },
   rules: {
-    // enforce return after a callback
-    "callback-return": "off",
-    // require all requires be top-level
-    // https://eslint.org/docs/rules/global-require
-    "global-require": "off",
-    // enforces error handling in callbacks (node environment)
-    "handle-callback-err": "off",
-    // disallow use of the Buffer() constructor
-    // https://eslint.org/docs/rules/no-buffer-constructor
-    "no-buffer-constructor": "warn",
-    // disallow mixing regular variable and require declarations
-    "no-mixed-requires": ["off", false],
-    // disallow use of new operator with the require function
-    "no-new-require": "off",
-    // disallow string concatenation with __dirname and __filename
-    // https://eslint.org/docs/rules/no-path-concat
-    "no-path-concat": "off",
-    // disallow use of process.env
-    "no-process-env": "off",
-    // disallow process.exit()
-    "no-process-exit": "off",
-    // restrict usage of specified node modules
-    "no-restricted-modules": "off",
-    // disallow use of synchronous methods (off by default)
-    "no-sync": "off"
+    "callback-return": "off", // return一个回调函数
+    "global-require": "off", // 全局的require
+    "handle-callback-err": "off", // 需要在回调中进行错误处理
+    "no-buffer-constructor": "warn", // 不允许使用Buffer（）构造函数
+    "no-mixed-requires": ["off", false], // 不允许require调用与变量声明混合使用
+    "no-new-require": "off", // require不能被new出来
+    "no-path-concat": "off", // 在使用__dirname和__filename时禁止字符串连接
+    "no-process-env": "off", // 禁用process.env
+    "no-process-exit": "off", // 禁用process.exit()
+    "no-restricted-modules": "off", // 被禁用的Node.js模块
+    "no-sync": "off" // 禁止同步方法
   }
 };
