@@ -115,7 +115,7 @@ module.exports = {
     "max-statements-per-line": "off", // 强制每行允许的最大数量的语句
     "multiline-comment-style": ["off", "starred-block"], // 多行注释风格
     "multiline-ternary": ["warn", "always-multiline"], // 在三元表达式的操作数之间强制或禁止换行
-    "new-cap": "error", // 需要构造函数名称以大写字母开头
+    "new-cap": ["error", { "capIsNew": false }], // 需要构造函数名称以大写字母开头
     "new-parens": "warn", // 调用不带参数的构造函数时需要括号
     "newline-per-chained-call": [
       "error",
